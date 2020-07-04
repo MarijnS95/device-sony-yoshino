@@ -47,10 +47,6 @@
         <device name="SND_DEVICE_IN_VOICE_DMIC" acdb_id="6"/>
         <device name="SND_DEVICE_IN_VOICE_TTY_VCO_HANDSET_MIC" acdb_id="4"/>
 
-        <!-- SOMC acdb ids -->
-        <device name="SND_DEVICE_OUT_SONY_VOICE_TTY_HCO_SPEAKER" acdb_id="150"/>
-        <device name="SND_DEVICE_IN_SONY_HANDSET_SECONDARY_MIC" acdb_id="35"/>
-
     </acdb_ids>
     <bit_width_configs>
         <device name="SND_DEVICE_OUT_SPEAKER" bit_width="24"/>
@@ -131,73 +127,6 @@
         <device name="SND_DEVICE_OUT_VOICE_TTY_HCO_HANDSET" interface="SLIMBUS_0_RX"/>
         <device name="SND_DEVICE_OUT_VOICE_TX" interface="SLIMBUS_0_RX"/>
 
-        <!-- SOMC out devices -->
-        <device name="SND_DEVICE_OUT_SONY_INCALL_MUSIC" backend="incall-music" interface="SLIMBUS_0_RX"/>
-        <device name="SND_DEVICE_OUT_SONY_INCALL_MUSIC_BT" backend="incall-music-bt" interface="SLIMBUS_0_RX"/>
-        <device name="SND_DEVICE_OUT_SONY_INCALL_MUSIC_BT_WB" backend="incall-music-bt-wb" interface="SLIMBUS_0_RX"/>
-        <device name="SND_DEVICE_OUT_SONY_INCALL_MUSIC_USB_HEADPHONES" backend="incall-music-usb-headphones" interface="SLIMBUS_0_RX"/>
-        <device name="SND_DEVICE_OUT_SONY_INCALL_MUSIC_USB_HEADSET" backend="incall-music-usb-headset" interface="SLIMBUS_0_RX"/>
-        <device name="SND_DEVICE_OUT_SONY_INCALL_MUSIC2" backend="incall-music2" interface="SLIMBUS_0_RX"/>
-        <device name="SND_DEVICE_OUT_SONY_INCALL_MUSIC2_BT" backend="incall-music2-bt" interface="SLIMBUS_0_RX"/>
-        <device name="SND_DEVICE_OUT_SONY_INCALL_MUSIC2_BT_WB" backend="incall-music2-bt-wb" interface="SLIMBUS_0_RX"/>
-        <device name="SND_DEVICE_OUT_SONY_INCALL_MUSIC2_USB_HEADPHONES" backend="incall-music2-usb-headphones" interface="SLIMBUS_0_RX"/>
-        <device name="SND_DEVICE_OUT_SONY_INCALL_MUSIC2_USB_HEADSET" backend="incall-music2-usb-headset" interface="SLIMBUS_0_RX"/>
-        <device name="SND_DEVICE_OUT_SONY_RINGTONE_SPEAKER" interface="SLIMBUS_0_RX"/>
-        <device name="SND_DEVICE_OUT_SONY_RINGTONE_SPEAKER_AND_BT_A2DP" backend="speaker-and-bt-a2dp" interface="SLIMBUS_0_RX-and-SLIMBUS_7_RX"/>
-        <device name="SND_DEVICE_OUT_SONY_RINGTONE_SPEAKER_AND_HEADPHONES" interface="SLIMBUS_0_RX"/>
-        <device name="SND_DEVICE_OUT_SONY_VOICE_HANDSET_HAC" interface="SLIMBUS_0_RX"/>
-        <device name="SND_DEVICE_OUT_SONY_VOICE_TTY_HCO_SPEAKER" interface="SLIMBUS_0_RX"/>
-
-        <!-- SOMC DNC out devices -->
-        <device name="SND_DEVICE_OUT_SONY_ANC_OFF" interface="SLIMBUS_0_RX"/>
-        <device name="SND_DEVICE_OUT_SONY_ANC_ON" interface="SLIMBUS_0_RX"/>
-        <device name="SND_DEVICE_OUT_SONY_ANC2_OFF" interface="SLIMBUS_0_RX"/>
-        <device name="SND_DEVICE_OUT_SONY_ANC2_ON" interface="SLIMBUS_0_RX"/>
-        <device name="SND_DEVICE_OUT_SONY_ANC_NC_HEADPHONE" interface="SLIMBUS_0_RX"/>
-        <device name="SND_DEVICE_OUT_SONY_ANC_NC_OFF_HEADPHONE" interface="SLIMBUS_0_RX"/>
-        <device name="SND_DEVICE_OUT_SONY_SPEAKER_ANC_NC_HEADPHONE" interface="SLIMBUS_0_RX"/>
-        <device name="SND_DEVICE_OUT_SONY_SPEAKER_ANC_NC_OFF_HEADPHONE" interface="SLIMBUS_0_RX"/>
-        <device name="SND_DEVICE_OUT_SONY_SPEAKER_RING_ANC_NC_HEADPHONE" interface="SLIMBUS_0_RX"/>
-        <device name="SND_DEVICE_OUT_SONY_SPEAKER_RING_ANC_NC_OFF_HEADPHONE" interface="SLIMBUS_0_RX"/>
-        <device name="SND_DEVICE_OUT_SONY_VOICE_ANC_NC_HEADPHONE" interface="SLIMBUS_0_RX"/>
-        <device name="SND_DEVICE_OUT_SONY_ANC_NCE_HEADPHONE" interface="SLIMBUS_0_RX"/>
-        <device name="SND_DEVICE_OUT_SONY_ANC_NCE_OFF_HEADPHONE" interface="SLIMBUS_0_RX"/>
-        <device name="SND_DEVICE_OUT_SONY_SPEAKER_ANC_NCE_HEADPHONE" interface="SLIMBUS_0_RX"/>
-        <device name="SND_DEVICE_OUT_SONY_SPEAKER_ANC_NCE_OFF_HEADPHONE" interface="SLIMBUS_0_RX"/>
-        <device name="SND_DEVICE_OUT_SONY_SPEAKER_RING_ANC_NCE_HEADPHONE" interface="SLIMBUS_0_RX"/>
-        <device name="SND_DEVICE_OUT_SONY_SPEAKER_RING_ANC_NCE_OFF_HEADPHONE" interface="SLIMBUS_0_RX"/>
-        <device name="SND_DEVICE_OUT_SONY_VOICE_ANC_NCE_HEADPHONE" interface="SLIMBUS_0_RX"/>
-        <device name="SND_DEVICE_OUT_SONY_ANC2_NC_HEADPHONE" interface="SLIMBUS_0_RX"/>
-        <device name="SND_DEVICE_OUT_SONY_ANC2_NC_OFF_HEADPHONE" interface="SLIMBUS_0_RX"/>
-        <device name="SND_DEVICE_OUT_SONY_SPEAKER_ANC2_NC_HEADPHONE" interface="SLIMBUS_0_RX"/>
-        <device name="SND_DEVICE_OUT_SONY_SPEAKER_ANC2_NC_OFF_HEADPHONE" interface="SLIMBUS_0_RX"/>
-        <device name="SND_DEVICE_OUT_SONY_SPEAKER_RING_ANC2_NC_HEADPHONE" interface="SLIMBUS_0_RX"/>
-        <device name="SND_DEVICE_OUT_SONY_SPEAKER_RING_ANC2_NC_OFF_HEADPHONE" interface="SLIMBUS_0_RX"/>
-        <device name="SND_DEVICE_OUT_SONY_VOICE_ANC2_NC_HEADPHONE" interface="SLIMBUS_0_RX"/>
-        <device name="SND_DEVICE_OUT_SONY_ANC2_NCE_HEADPHONE" interface="SLIMBUS_0_RX"/>
-        <device name="SND_DEVICE_OUT_SONY_ANC2_NCE_OFF_HEADPHONE" interface="SLIMBUS_0_RX"/>
-        <device name="SND_DEVICE_OUT_SONY_SPEAKER_ANC2_NCE_HEADPHONE" interface="SLIMBUS_0_RX"/>
-        <device name="SND_DEVICE_OUT_SONY_SPEAKER_ANC2_NCE_OFF_HEADPHONE" interface="SLIMBUS_0_RX"/>
-        <device name="SND_DEVICE_OUT_SONY_SPEAKER_RING_ANC2_NCE_HEADPHONE" interface="SLIMBUS_0_RX"/>
-        <device name="SND_DEVICE_OUT_SONY_SPEAKER_RING_ANC2_NCE_OFF_HEADPHONE" interface="SLIMBUS_0_RX"/>
-        <device name="SND_DEVICE_OUT_SONY_VOICE_ANC2_NCE_HEADPHONE" interface="SLIMBUS_0_RX"/>
-        <device name="SND_DEVICE_OUT_SONY_ANC_OFF_PCM_OFFLOAD" interface="SLIMBUS_0_RX"/>
-        <device name="SND_DEVICE_OUT_SONY_ANC_ON_PCM_OFFLOAD" interface="SLIMBUS_0_RX"/>
-        <device name="SND_DEVICE_OUT_SONY_ANC2_OFF_PCM_OFFLOAD" interface="SLIMBUS_0_RX"/>
-        <device name="SND_DEVICE_OUT_SONY_ANC2_ON_PCM_OFFLOAD" interface="SLIMBUS_0_RX"/>
-        <device name="SND_DEVICE_OUT_SONY_ANC_TYPE_0_AIRPLANE_MODE" interface="SLIMBUS_0_RX"/>
-        <device name="SND_DEVICE_OUT_SONY_ANC_TYPE_0_BUS_TRAIN_MODE" interface="SLIMBUS_0_RX"/>
-        <device name="SND_DEVICE_OUT_SONY_ANC_TYPE_0_OFFICE_MODE" interface="SLIMBUS_0_RX"/>
-        <device name="SND_DEVICE_OUT_SONY_ANC_TYPE_1_AIRPLANE_MODE" interface="SLIMBUS_0_RX"/>
-        <device name="SND_DEVICE_OUT_SONY_ANC_TYPE_1_BUS_TRAIN_MODE" interface="SLIMBUS_0_RX"/>
-        <device name="SND_DEVICE_OUT_SONY_ANC_TYPE_1_OFFICE_MODE" interface="SLIMBUS_0_RX"/>
-        <device name="SND_DEVICE_OUT_SONY_ANC2_TYPE_2_AIRPLANE_MODE" interface="SLIMBUS_0_RX"/>
-        <device name="SND_DEVICE_OUT_SONY_ANC2_TYPE_2_BUS_TRAIN_MODE" interface="SLIMBUS_0_RX"/>
-        <device name="SND_DEVICE_OUT_SONY_ANC2_TYPE_2_OFFICE_MODE" interface="SLIMBUS_0_RX"/>
-        <device name="SND_DEVICE_OUT_SONY_ANC2_TYPE_3_AIRPLANE_MODE" interface="SLIMBUS_0_RX"/>
-        <device name="SND_DEVICE_OUT_SONY_ANC2_TYPE_3_BUS_TRAIN_MODE" interface="SLIMBUS_0_RX"/>
-        <device name="SND_DEVICE_OUT_SONY_ANC2_TYPE_3_OFFICE_MODE" interface="SLIMBUS_0_RX"/>
-
         <!-- platform in devices -->
         <device name="SND_DEVICE_IN_BT_SCO_MIC" backend="bt-sco" interface="SLIMBUS_7_TX"/>
         <device name="SND_DEVICE_IN_BT_SCO_MIC_WB" backend="bt-sco-wb" interface="SLIMBUS_7_TX"/>
@@ -213,57 +142,6 @@
         <device name="SND_DEVICE_IN_VOICE_HEADSET_MIC" interface="SLIMBUS_0_TX"/>
         <device name="SND_DEVICE_IN_VOICE_RX" interface="SLIMBUS_0_TX"/>
         <device name="SND_DEVICE_IN_VOICE_SPEAKER_MIC" interface="SLIMBUS_0_TX"/>
-
-        <!-- SOMC in devices -->
-        <device name="SND_DEVICE_IN_SONY_BT_SCO_DSP_MIC" backend="bt-sco" interface="SLIMBUS_7_TX"/>
-        <device name="SND_DEVICE_IN_SONY_BT_SCO_DSP_MIC_VOIP" backend="bt-sco" interface="SLIMBUS_7_TX"/>
-        <device name="SND_DEVICE_IN_SONY_BT_SCO_DSP_MIC_WB" backend="bt-sco-wb" interface="SLIMBUS_7_TX"/>
-        <device name="SND_DEVICE_IN_SONY_BT_SCO_DSP_MIC_WB_VOIP" backend="bt-sco-wb" interface="SLIMBUS_7_TX"/>
-        <device name="SND_DEVICE_IN_SONY_BT_SCO_MIC_VOIP" backend="bt-sco" interface="SLIMBUS_7_TX"/>
-        <device name="SND_DEVICE_IN_SONY_BT_SCO_MIC_WB_VOIP" backend="bt-sco-wb" interface="SLIMBUS_7_TX"/>
-        <device name="SND_DEVICE_IN_SONY_CAMCORDER" interface="SLIMBUS_0_TX"/>
-        <device name="SND_DEVICE_IN_SONY_CAMCORDER_GAIN_LOW" interface="SLIMBUS_0_TX"/>
-        <device name="SND_DEVICE_IN_SONY_CAMCORDER_GAIN_MID" interface="SLIMBUS_0_TX"/>
-        <device name="SND_DEVICE_IN_SONY_CAMCORDER_GAIN_HIGH" interface="SLIMBUS_0_TX"/>
-        <device name="SND_DEVICE_IN_SONY_CAPTURE_AHC" interface="SLIMBUS_0_TX"/>
-        <device name="SND_DEVICE_IN_SONY_EXTERNAL_STEREO_MIC" interface="SLIMBUS_0_TX"/>
-        <device name="SND_DEVICE_IN_SONY_EXTERNAL_STEREO_MIC_GAIN_LOW" interface="SLIMBUS_0_TX"/>
-        <device name="SND_DEVICE_IN_SONY_EXTERNAL_STEREO_MIC_GAIN_MID" interface="SLIMBUS_0_TX"/>
-        <device name="SND_DEVICE_IN_SONY_EXTERNAL_STEREO_MIC_GAIN_HIGH" interface="SLIMBUS_0_TX"/>
-        <device name="SND_DEVICE_IN_SONY_HANDSET_MIC" interface="SLIMBUS_0_TX"/>
-        <device name="SND_DEVICE_IN_SONY_HANDSET_MIC_ASR" interface="SLIMBUS_0_TX"/>
-        <device name="SND_DEVICE_IN_SONY_HANDSET_SECONDARY_MIC" interface="SLIMBUS_0_TX"/>
-        <device name="SND_DEVICE_IN_SONY_HEADSET_MIC" interface="SLIMBUS_0_TX"/>
-        <device name="SND_DEVICE_IN_SONY_HEADSET_MIC_ASR" interface="SLIMBUS_0_TX"/>
-        <device name="SND_DEVICE_IN_SONY_INCALL_VOICE_RECORD" interface="SLIMBUS_0_TX"/>
-        <device name="SND_DEVICE_IN_SONY_HEADSET_MIC_GAIN_LOW" interface="SLIMBUS_0_TX"/>
-        <device name="SND_DEVICE_IN_SONY_HEADSET_MIC_GAIN_MID" interface="SLIMBUS_0_TX"/>
-        <device name="SND_DEVICE_IN_SONY_HEADSET_MIC_GAIN_HIGH" interface="SLIMBUS_0_TX"/>
-        <device name="SND_DEVICE_IN_SONY_MONO_MIC" interface="SLIMBUS_0_TX"/>
-        <device name="SND_DEVICE_IN_SONY_MONO_MIC_GAIN_LOW" interface="SLIMBUS_0_TX"/>
-        <device name="SND_DEVICE_IN_SONY_MONO_MIC_GAIN_MID" interface="SLIMBUS_0_TX"/>
-        <device name="SND_DEVICE_IN_SONY_MONO_MIC_GAIN_HIGH" interface="SLIMBUS_0_TX"/>
-        <device name="SND_DEVICE_IN_SONY_STEREO_MIC" interface="SLIMBUS_0_TX"/>
-        <device name="SND_DEVICE_IN_SONY_STEREO_MIC_GAIN_LOW" interface="SLIMBUS_0_TX"/>
-        <device name="SND_DEVICE_IN_SONY_STEREO_MIC_GAIN_MID" interface="SLIMBUS_0_TX"/>
-        <device name="SND_DEVICE_IN_SONY_STEREO_MIC_GAIN_HIGH" interface="SLIMBUS_0_TX"/>
-        <device name="SND_DEVICE_IN_SONY_VOIP_DMIC" interface="SLIMBUS_0_TX"/>
-        <device name="SND_DEVICE_IN_SONY_VOIP_HEADSET_MIC" interface="SLIMBUS_0_TX"/>
-        <device name="SND_DEVICE_IN_SONY_VOIP_SPEAKER_MIC" interface="SLIMBUS_0_TX"/>
-
-        <!-- SOMC DNC in devices -->
-        <device name="SND_DEVICE_IN_SONY_BINAURAL_MIC" interface="SLIMBUS_0_TX"/>
-        <device name="SND_DEVICE_IN_SONY_BINAURAL_MIC_GAIN_LOW" interface="SLIMBUS_0_TX"/>
-        <device name="SND_DEVICE_IN_SONY_BINAURAL_MIC_GAIN_MID" interface="SLIMBUS_0_TX"/>
-        <device name="SND_DEVICE_IN_SONY_BINAURAL_MIC_GAIN_HIGH" interface="SLIMBUS_0_TX"/>
-        <device name="SND_DEVICE_IN_SONY_BINAURAL2_MIC" interface="SLIMBUS_0_TX"/>
-        <device name="SND_DEVICE_IN_SONY_BINAURAL2_MIC_GAIN_LOW" interface="SLIMBUS_0_TX"/>
-        <device name="SND_DEVICE_IN_SONY_BINAURAL2_MIC_GAIN_MID" interface="SLIMBUS_0_TX"/>
-        <device name="SND_DEVICE_IN_SONY_BINAURAL2_MIC_GAIN_HIGH" interface="SLIMBUS_0_TX"/>
-        <device name="SND_DEVICE_IN_SONY_VOICE_ANC_HEADSET" interface="SLIMBUS_0_TX"/>
-        <device name="SND_DEVICE_IN_SONY_VOICE_ANC2_HEADSET" interface="SLIMBUS_0_TX"/>
-        <device name="SND_DEVICE_IN_SONY_VOIP_ANC_HEADSET" interface="SLIMBUS_0_TX"/>
-        <device name="SND_DEVICE_IN_SONY_VOIP_ANC2_HEADSET" interface="SLIMBUS_0_TX"/>
     </backend_names>
  <!-- below values are for ref purpose to OEM, doesn't contain actual hardware info on MTP -->
     <microphone_characteristics>
@@ -421,42 +299,6 @@
                             channel_mapping="AUDIO_MICROPHONE_CHANNEL_MAPPING_PROCESSED"/>
                         <mic_info mic_device_id="builtin_mic_3"
                             channel_mapping="AUDIO_MICROPHONE_CHANNEL_MAPPING_PROCESSED"/>
-                    </snd_dev>
-
-                    <!-- SOMC in devices -->
-                    <snd_dev in_snd_device="SND_DEVICE_IN_SONY_CAMCORDER">
-                        <mic_info mic_device_id="builtin_mic_1"
-                            channel_mapping="AUDIO_MICROPHONE_CHANNEL_MAPPING_PROCESSED AUDIO_MICROPHONE_CHANNEL_MAPPING_PROCESSED"/>
-                        <mic_info mic_device_id="builtin_mic_2"
-                            channel_mapping="AUDIO_MICROPHONE_CHANNEL_MAPPING_PROCESSED AUDIO_MICROPHONE_CHANNEL_MAPPING_PROCESSED"/>
-                    </snd_dev>
-                    <snd_dev in_snd_device="SND_DEVICE_IN_SONY_HANDSET_MIC_ASR">
-                        <mic_info mic_device_id="builtin_mic_1"
-                            channel_mapping="AUDIO_MICROPHONE_CHANNEL_MAPPING_PROCESSED"/>
-                    </snd_dev>
-                    <snd_dev in_snd_device="SND_DEVICE_IN_SONY_HANDSET_SECONDARY_MIC">
-                        <mic_info mic_device_id="builtin_mic_3"
-                            channel_mapping="AUDIO_MICROPHONE_CHANNEL_MAPPING_UNUSED AUDIO_MICROPHONE_CHANNEL_MAPPING_PROCESSED"/>
-                    </snd_dev>
-                    <snd_dev in_snd_device="SND_DEVICE_IN_SONY_MONO_MIC">
-                        <mic_info mic_device_id="builtin_mic_1"
-                            channel_mapping="AUDIO_MICROPHONE_CHANNEL_MAPPING_PROCESSED"/>
-                    </snd_dev>
-                    <snd_dev in_snd_device="SND_DEVICE_IN_SONY_STEREO_MIC">
-                        <mic_info mic_device_id="builtin_mic_1"
-                            channel_mapping="AUDIO_MICROPHONE_CHANNEL_MAPPING_PROCESSED"/>
-                        <mic_info mic_device_id="builtin_mic_2"
-                            channel_mapping="AUDIO_MICROPHONE_CHANNEL_MAPPING_PROCESSED"/>
-                    </snd_dev>
-                    <snd_dev in_snd_device="SND_DEVICE_IN_SONY_VOIP_DMIC">
-                        <mic_info mic_device_id="builtin_mic_1"
-                            channel_mapping="AUDIO_MICROPHONE_CHANNEL_MAPPING_PROCESSED"/>
-                        <mic_info mic_device_id="builtin_mic_2"
-                            channel_mapping="AUDIO_MICROPHONE_CHANNEL_MAPPING_PROCESSED"/>
-                    </snd_dev>
-                    <snd_dev in_snd_device="SND_DEVICE_IN_SONY_VOIP_SPEAKER_MIC">
-                        <mic_info mic_device_id="builtin_mic_3"
-                            channel_mapping="AUDIO_MICROPHONE_CHANNEL_MAPPING_UNUSED AUDIO_MICROPHONE_CHANNEL_MAPPING_PROCESSED"/>
                     </snd_dev>
             </input_snd_device_mic_mapping>
         </input_snd_device>
